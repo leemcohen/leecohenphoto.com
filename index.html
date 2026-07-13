@@ -7,6 +7,15 @@
 <meta name="description" content="Small-group street photography walking tours of NYC led by a licensed tour guide and working photographer. 3-hour tours of Downtown Manhattan, Midtown, North Brooklyn, and Queens. Photography instruction for all levels, any camera.">
 <link rel="canonical" href="https://leecohenphoto.com/">
 
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWPY1KG4C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NWPY1KG4C4');
+</script>
+
 <!-- Open Graph (Facebook, iMessage, LinkedIn link previews) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leecohenphoto.com/">
@@ -401,6 +410,21 @@
   <p style="margin-top: 0.4rem;">NYC Licensed Sightseeing Guide</p>
   <p style="margin-top: 0.4rem;">© 2026 Lee Cohen. All photographs © Lee Cohen.</p>
 </footer>
+
+<script>
+  // Event tracking: which tours draw clicks, and form submissions
+  document.querySelectorAll('.tour-card').forEach(function (card) {
+    var tourName = card.querySelector('h3').textContent;
+    card.querySelector('.tour-link').addEventListener('click', function () {
+      gtag('event', 'tour_interest', { tour: tourName });
+    });
+  });
+  document.querySelector('form').addEventListener('submit', function () {
+    gtag('event', 'generate_lead', {
+      tour: document.getElementById('tour').value
+    });
+  });
+</script>
 
 </body>
 </html>
