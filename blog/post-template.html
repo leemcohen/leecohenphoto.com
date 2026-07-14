@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 1. Set your post title and description below -->
+<title>POST TITLE HERE — Lee Cohen Photo Tours</title>
+<meta name="description" content="ONE-SENTENCE POST SUMMARY HERE.">
+<!-- 2. Set the canonical URL to match this file's name -->
+<link rel="canonical" href="https://leecohenphoto.com/blog/FILENAME.html">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWPY1KG4C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NWPY1KG4C4');
+</script>
+
+<style>
+  :root {
+    --black: #111111; --off-black: #1c1c1c; --gray-dark: #444; --gray: #757575;
+    --gray-light: #d9d9d9; --paper: #f4f2ee; --white: #fdfdfc; --accent: #b8452a;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); color: var(--black); background: var(--paper); line-height: 1.7; }
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(244,242,238,0.95); backdrop-filter: blur(6px); border-bottom: 1px solid var(--gray-light); }
+  .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0.9rem 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+  .nav-logo { font-family: var(--serif); font-size: 1.15rem; text-decoration: none; color: var(--black); font-weight: bold; }
+  .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gray-dark); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .nav-links a.nav-cta { color: var(--accent); font-weight: 600; }
+  article { max-width: 680px; margin: 0 auto; padding: 4rem 1.5rem; }
+  .post-date { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray); margin-bottom: 0.6rem; }
+  h1 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: normal; margin-bottom: 1.6rem; line-height: 1.2; }
+  article p { margin-bottom: 1.2rem; color: var(--gray-dark); }
+  article h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: normal; margin: 2rem 0 0.8rem; color: var(--black); }
+  article img { width: 100%; height: auto; display: block; margin: 1.6rem 0; }
+  article figcaption { font-size: 0.8rem; color: var(--gray); margin-top: -1rem; margin-bottom: 1.6rem; }
+  .post-cta { border: 1px solid var(--gray-light); background: var(--white); padding: 1.4rem 1.6rem; margin-top: 2.5rem; }
+  .post-cta a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  footer { background: var(--off-black); color: var(--gray); padding: 2.5rem 1.5rem; text-align: center; font-size: 0.82rem; }
+  footer a { color: var(--gray-light); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../">Lee Cohen Photo Tours</a>
+    <ul class="nav-links">
+      <li><a href="../#tours">Tours</a></li>
+      <li><a href="./">Blog</a></li>
+      <li><a class="nav-cta" href="../#book">Book a Tour</a></li>
+    </ul>
+  </div>
+</nav>
+
+<article>
+  <!-- 3. Write the post -->
+  <p class="post-date">Month D, YYYY</p>
+  <h1>POST TITLE HERE</h1>
+
+  <p>Opening paragraph.</p>
+
+  <h2>A subheading</h2>
+  <p>More text. To add a photo, copy it into the images folder and use:</p>
+  <!-- <img src="../images/your-photo.jpg" alt="Describe the photo" loading="lazy"> -->
+
+  <div class="post-cta">
+    <p style="margin:0">Want to shoot these streets with a guide? <a href="../#book">Book a photo tour →</a></p>
+  </div>
+</article>
+
+<footer>
+  <p>Lee Cohen Photo Tours · New York City</p>
+  <p style="margin-top: 0.4rem;"><a href="../">leecohenphoto.com</a></p>
+</footer>
+
+</body>
+</html>

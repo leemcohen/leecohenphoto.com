@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Lee Cohen Photo Tours | Street Photography in New York</title>
+<meta name="description" content="Notes on street photography in New York City — where to shoot, how to see, and what's happening on the streets. From Lee Cohen, NYC photo tour guide.">
+<link rel="canonical" href="https://leecohenphoto.com/blog/">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWPY1KG4C4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NWPY1KG4C4');
+</script>
+
+<style>
+  :root {
+    --black: #111111;
+    --off-black: #1c1c1c;
+    --gray-dark: #444;
+    --gray: #757575;
+    --gray-light: #d9d9d9;
+    --paper: #f4f2ee;
+    --white: #fdfdfc;
+    --accent: #b8452a;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); color: var(--black); background: var(--paper); line-height: 1.6; }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(244,242,238,0.95); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--gray-light);
+  }
+  .nav-inner {
+    max-width: 1100px; margin: 0 auto; padding: 0.9rem 1.5rem;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.15rem; letter-spacing: 0.02em; text-decoration: none; color: var(--black); font-weight: bold; }
+  .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gray-dark); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .nav-links a:hover { color: var(--black); }
+  .nav-links a.nav-cta { color: var(--accent); font-weight: 600; }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem; }
+  .section-kicker { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--accent); margin-bottom: 0.8rem; }
+  h1 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: normal; margin-bottom: 1rem; }
+  .blog-intro { color: var(--gray-dark); margin-bottom: 3rem; max-width: 560px; }
+
+  .post-list { list-style: none; }
+  .post-list li { border-top: 1px solid var(--gray-light); padding: 1.8rem 0; }
+  .post-list a.post-title { font-family: var(--serif); font-size: 1.3rem; color: var(--black); text-decoration: none; }
+  .post-list a.post-title:hover { color: var(--accent); }
+  .post-date { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray); margin-bottom: 0.4rem; }
+  .post-excerpt { color: var(--gray-dark); margin-top: 0.5rem; font-size: 0.95rem; }
+
+  footer { background: var(--off-black); color: var(--gray); padding: 2.5rem 1.5rem; text-align: center; font-size: 0.82rem; }
+  footer a { color: var(--gray-light); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../">Lee Cohen Photo Tours</a>
+    <ul class="nav-links">
+      <li><a href="../#tours">Tours</a></li>
+      <li><a href="../#about">About</a></li>
+      <li><a href="./">Blog</a></li>
+      <li><a class="nav-cta" href="../#book">Book a Tour</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <p class="section-kicker">The Blog</p>
+  <h1>Notes from the street</h1>
+  <p class="blog-intro">Where to shoot in New York, how to see like a street photographer, and dispatches from the tours.</p>
+
+  <ul class="post-list">
+    <!-- ADD NEW POSTS AT THE TOP OF THIS LIST.
+         Each post is its own HTML file in this folder (copy post-template.html,
+         rename it like "best-photo-spots-chinatown.html", write, then link it here). -->
+    <li>
+      <p class="post-date">Coming soon</p>
+      <span class="post-title" style="font-family: var(--serif); font-size: 1.3rem;">First post on its way</span>
+      <p class="post-excerpt">Notes on street photography in New York, starting soon.</p>
+    </li>
+  </ul>
+</main>
+
+<footer>
+  <p>Lee Cohen Photo Tours · New York City</p>
+  <p style="margin-top: 0.4rem;"><a href="../">leecohenphoto.com</a></p>
+</footer>
+
+</body>
+</html>
