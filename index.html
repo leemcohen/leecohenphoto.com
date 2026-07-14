@@ -148,8 +148,10 @@
     font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; text-align: center; padding: 1rem;
   }
   .photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-top: 3rem; }
-  .photo-strip .ph { aspect-ratio: 4 / 5; }
-  @media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr; } .photo-strip .ph { aspect-ratio: 3 / 2; } }
+  .photo-strip img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+  @media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr; } }
+  .tour-card > img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+  .about-grid > img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
 
   /* ---------- Tour cards ---------- */
   .tour-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
@@ -161,6 +163,14 @@
   .tour-card p { font-size: 0.95rem; color: var(--gray-dark); flex: 1; }
   .tour-card .tour-link { margin-top: 1.2rem; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); text-decoration: none; font-weight: 600; }
   .tour-card .tour-link:hover { text-decoration: underline; }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials { background: var(--white); border-top: 1px solid var(--gray-light); padding-top: 4rem; padding-bottom: 4rem; }
+  .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2.5rem; }
+  .testimonial-grid blockquote p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.65; color: var(--black); margin-bottom: 0.8rem; }
+  .testimonial-grid cite { font-style: normal; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray); }
+  .strip-section { padding-top: 0.6rem; padding-bottom: 4rem; }
+  .strip-section .photo-strip { margin-top: 0; }
 
   /* ---------- Learn list ---------- */
   .learn { background: var(--off-black); color: var(--white); }
@@ -213,6 +223,7 @@
       <li><a href="#learn">What You'll Learn</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#details">Details</a></li>
+      <li><a href="blog/">Blog</a></li>
       <li><a class="nav-cta" href="#book">Book a Tour</a></li>
     </ul>
   </div>
@@ -232,10 +243,10 @@
   <div class="container">
     <p class="section-kicker">The Tours</p>
     <h2>Four routes. One approach: shoot as we go.</h2>
-    <p class="lede">Every tour mixes neighborhood history with hands-on street photography instruction. We stop, we look, we talk about light and timing and composition — and then you shoot. I work with you individually along the way, whatever your camera and whatever your level.</p>
+    <p class="lede">Every tour mixes neighborhood history with hands-on street photography instruction. We stop, we look, we talk about light and timing and composition — and then you shoot. I work with you individually along the way, whatever your camera and whatever your level. Tours can be combined for full-day experiences, remixed to focus on particular neighborhoods, or reimagined altogether. Just ask!</p>
     <div class="tour-grid">
       <div class="tour-card">
-        <div class="ph">Photo: Downtown Manhattan</div>
+        <img src="images/chinatown-street-photography-tour-nyc.jpg" alt="Black-and-white street photograph of a Chinatown storefront with Chinese signage, New York City" width="1600" height="1061">
         <div class="tour-card-body">
           <h3>Downtown Manhattan</h3>
           <p class="tour-meta">SoHo / Chinatown / Lower East Side · 3 hours</p>
@@ -244,7 +255,7 @@
         </div>
       </div>
       <div class="tour-card">
-        <div class="ph">Photo: Midtown Manhattan</div>
+        <img src="images/times-square-midtown-photo-tour-nyc.jpg" alt="Woman looking up at the billboards of Times Square, black-and-white street photograph, Midtown Manhattan" width="1600" height="1085" loading="lazy">
         <div class="tour-card-body">
           <h3>Midtown Manhattan</h3>
           <p class="tour-meta">Bryant Park to Central Park · 3 hours</p>
@@ -253,7 +264,7 @@
         </div>
       </div>
       <div class="tour-card">
-        <div class="ph">Photo: North Brooklyn</div>
+        <img src="images/williamsburg-bridge-brooklyn-photo-tour.jpg" alt="Williamsburg Bridge and Manhattan skyline seen from the water, Brooklyn, black-and-white photograph" width="1600" height="1061" loading="lazy">
         <div class="tour-card-body">
           <h3>North Brooklyn</h3>
           <p class="tour-meta">Greenpoint / Williamsburg · 3 hours</p>
@@ -262,7 +273,7 @@
         </div>
       </div>
       <div class="tour-card">
-        <div class="ph">Photo: Queens</div>
+        <img src="images/queens-food-tour-street-photography.jpg" alt="Parade dancers in traditional dress on a Queens street, black-and-white street photograph" width="1600" height="1061" loading="lazy">
         <div class="tour-card-body">
           <h3>Queens Food Walking Tour</h3>
           <p class="tour-meta">Queens · 3 hours</p>
@@ -271,10 +282,38 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <p class="section-kicker">What Guests Say</p>
+    <h2>From the streets</h2>
+    <div class="testimonial-grid">
+      <!-- PLACEHOLDER TESTIMONIALS: replace each quote and attribution with real ones
+           from your guests before going live, or hide this section until you have them. -->
+      <blockquote>
+        <p>"[Guest quote goes here — ask your first guests for a sentence or two about the tour.]"</p>
+        <cite>— Name, City</cite>
+      </blockquote>
+      <blockquote>
+        <p>"[Guest quote goes here.]"</p>
+        <cite>— Name, City</cite>
+      </blockquote>
+      <blockquote>
+        <p>"[Guest quote goes here.]"</p>
+        <cite>— Name, City</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="strip-section" aria-label="Photographs from the tours">
+  <div class="container">
     <div class="photo-strip">
-      <div class="ph">Your photograph here</div>
-      <div class="ph">Your photograph here</div>
-      <div class="ph">Your photograph here</div>
+      <img src="images/street-photography-nyc-lincoln-crowd.jpg" alt="Man dressed as Abraham Lincoln in a crowd near Madison Square, black-and-white street photograph, New York" width="1600" height="1061" loading="lazy">
+      <img src="images/street-photography-nyc-summer-sprinkler.jpg" alt="Girl playing in a park sprinkler on a summer day, black-and-white street photograph, New York City" width="1600" height="1061" loading="lazy">
+      <img src="images/street-photography-nyc-sari-portraits.jpg" alt="Women in saris seated on stone steps, black-and-white street portrait, New York City" width="1600" height="1061" loading="lazy">
     </div>
   </div>
 </section>
@@ -318,7 +357,7 @@
     <p class="section-kicker">About Your Guide</p>
     <h2>Lee Cohen</h2>
     <div class="about-grid">
-      <div class="ph">Portrait of Lee</div>
+      <img src="images/lee-cohen-nyc-photo-tour-guide.jpg" alt="Lee Cohen, NYC photo tour guide, self-portrait with camera in a sidewalk mirror, black-and-white" width="1600" height="1600" loading="lazy">
       <div class="about-text">
         <p>I'm a Brooklyn-based photographer and a New York City licensed sightseeing guide. I shoot the city the old way — black-and-white film, printed by hand in the darkroom — and I've spent years walking these streets with a camera.</p>
         <p>I've taught and assisted photography courses at the International Center of Photography and I'm a member of the Bushwick Community Darkroom. My own work has been shown to editors, curators, and reviewers at national portfolio reviews, and I'm currently at work on a long-term documentary project.</p>
