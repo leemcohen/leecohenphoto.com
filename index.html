@@ -22,7 +22,9 @@
 <meta property="og:title" content="NYC Street Photography Tours — Lee Cohen Photo Tours">
 <meta property="og:description" content="Small-group street photography walking tours of Manhattan, Brooklyn, and Queens, led by a licensed NYC tour guide and working photographer.">
 <meta property="og:site_name" content="Lee Cohen Photo Tours">
+<meta property="og:image" content="https://leecohenphoto.com/images/hero-times-square-street-photography.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="images/hero-times-square-street-photography.jpg">
 
 <!-- Structured data for Google -->
 <script type="application/ld+json">
@@ -108,9 +110,14 @@
 
   /* ---------- Hero ---------- */
   header.hero {
-    background: var(--off-black); color: var(--white);
+    background:
+      linear-gradient(rgba(17,17,17,0.66), rgba(17,17,17,0.72)),
+      url('images/hero-times-square-street-photography.jpg') center 30% / cover no-repeat,
+      var(--off-black);
+    color: var(--white);
     padding: 6rem 1.5rem 5rem; text-align: center; position: relative; overflow: hidden;
   }
+  .hero-inner h1, .hero-sub, .hero-kicker { text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
   /* Film-grain-ish texture */
   header.hero::after {
     content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.35;
